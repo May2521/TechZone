@@ -1,4 +1,108 @@
 <!DOCTYPE html>
-<html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TechZone | IT & Gaming Store</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header"><div class="container header-inner"><a href="index.html" class="brand-logo"><img src="techzone-logo-transparent.png" alt="TechZone"></a><nav><ul class="nav-list"><li><a class="active" href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="#about">เกี่ยวกับเรา</a></li><li><a href="#contact">ติดต่อเรา</a></li></ul></nav><div class="header-actions"><div class="auth-area"></div><a class="cart-link" href="products.html#cart">🛒 <span id="cartBadge" class="cart-badge">0</span></a></div></div></header>
-<main><section class="hero-section"><div class="hero-glow"></div><div class="container hero-content"><div class="hero-brand"><img src="techzone-logo-transparent.png" alt=""><div><strong>Tech<span>Zone</span></strong><small>Your IT Solutions Partner</small></div></div><span class="eyebrow">TECHZONE COMPUTER STORE</span><h1>อุปกรณ์ไอที &amp; Gaming Gear ครบวงจร</h1><p>คอมพิวเตอร์ อุปกรณ์เสริม เกมมิ่งเกียร์ และสินค้าไอทีคุณภาพ</p><a class="button button-accent" href="products.html">ดูสินค้าเพิ่มเติม →</a></div></section><section class="popular-section section-spacing"><div class="container"><div class="section-heading"><div><span class="eyebrow">HOT PICKS</span><h2>สินค้าฮิตติดเทรนด์</h2></div></div><div class="home-product-layout"><div id="featuredProducts" class="product-grid"></div><aside class="promo-aside"><div class="promo-logo"><img src="techzone-logo-transparent.png" alt="TechZone"></div><h2>เก็บครบ จบที่เดียว</h2><p>อุปกรณ์ไอทีและเกมมิ่งเกียร์</p><a class="button button-accent" href="products.html">ดูสินค้าทั้งหมด →</a></aside></div></div></section><section id="about" class="section-spacing about-section"><div class="container"><span class="eyebrow">WHY TECHZONE</span><h2>เทคโนโลยีที่เลือกให้คุณใช้งานได้อย่างมั่นใจ</h2></div></section><section id="contact" class="contact-section section-spacing"><div class="container contact-card"><div><span class="eyebrow">CONTACT US</span><h2>พร้อมให้คำแนะนำเรื่องอุปกรณ์ไอที</h2></div><div class="contact-details"><p>Phone: 0946308259</p><p>Email: Rakarjankhawncai@Gmail.com</p></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><img src="techzone-logo-transparent.png" alt="TechZone"><p>Computer &amp; Gaming Store</p></div></footer><div id="toast" class="toast"></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="script.js"></script></body></html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechZone - Computer & Gaming Store">
+    <title>TechZone | IT & Gaming Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand-logo" aria-label="TechZone IT Solutions">
+            <img src="techzone-logo-transparent.png" alt="TechZone IT Solutions">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a class="active" href="index.html">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้า</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="auth-area"></div>
+            <a class="cart-link" href="products.html#cart" aria-label="ตะกร้าสินค้า">
+                <span class="cart-icon">🛒</span><span class="cart-badge" id="cartBadge">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+        <div class="hero-brand">
+            <img src="techzone-logo-transparent.png" alt="" aria-hidden="true">
+            <div><strong>Tech<span>Zone</span></strong><small>Your IT Solutions Partner</small></div>
+        </div>
+        <span class="eyebrow">TECHZONE COMPUTER STORE</span>
+        <h1>อุปกรณ์ไอที &amp; Gaming Gear ครบวงจร</h1>
+        <p>คอมพิวเตอร์ อุปกรณ์เสริม เกมมิ่งเกียร์ และสินค้าไอทีคุณภาพ<br>พร้อมบริการที่คุณไว้วางใจ</p>
+        <a class="button button-accent hero-button" href="products.html">ดูสินค้าเพิ่มเติม <span>→</span></a>
+    </div>
+    <div class="hero-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
+    <div class="hero-tagline">เล่นให้สุด<br><span>ไปได้ไกลกว่า</span></div>
+</section>
+
+<section class="trust-strip">
+    <div class="container trust-grid">
+        <article><span>▣</span><div><strong>จัดส่งรวดเร็ว</strong><small>ทั่วประเทศ</small></div></article>
+        <article><span>◈</span><div><strong>สินค้าของแท้ 100%</strong><small>มั่นใจได้ทุกชิ้น</small></div></article>
+        <article><span>✓</span><div><strong>รับประกันสินค้า</strong><small>ตามเงื่อนไขแบรนด์</small></div></article>
+        <article><span>♧</span><div><strong>บริการหลังการขาย</strong><small>พร้อมดูแลคุณ</small></div></article>
+        <article><span>▤</span><div><strong>ชำระเงินปลอดภัย</strong><small>หลากหลายช่องทาง</small></div></article>
+    </div>
+</section>
+
+<section class="popular-section section-spacing">
+    <div class="container">
+        <div class="section-heading">
+            <div><span class="eyebrow">HOT PICKS</span><h2>สินค้าฮิตติดเทรนด์</h2><p>สินค้าที่ลูกค้าชื่นชอบมากที่สุด</p></div>
+        </div>
+        <div class="home-product-layout">
+            <div id="featuredProducts" class="product-grid"></div>
+            <aside class="promo-aside">
+                <div class="promo-logo"><img src="techzone-logo-transparent.png" alt="TechZone"></div>
+                <span class="eyebrow">TECHZONE STORE</span>
+                <h2>เก็บครบ จบที่เดียว</h2>
+                <p>อุปกรณ์ไอทีและเกมมิ่งเกียร์<br>สำหรับทุกสไตล์การใช้งาน</p>
+                <a class="button button-accent" href="products.html">ดูสินค้าทั้งหมด →</a>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-spacing about-section">
+    <div class="container about-grid">
+        <div><span class="eyebrow">WHY TECHZONE</span><h2>เทคโนโลยีที่เลือกให้คุณ<br>ใช้งานได้อย่างมั่นใจ</h2><p class="muted">TechZone มุ่งเน้นสินค้าคุณภาพ ปลอดภัย และตอบโจทย์การใช้งานจริง</p></div>
+        <div class="about-points">
+            <article><span>01</span><div><h3>ข้อมูลสินค้าเข้าใจง่าย</h3><p>สเปก ราคา และรายละเอียดสำคัญชัดเจน</p></div></article>
+            <article><span>02</span><div><h3>ดูแลหลังการขาย</h3><p>มีข้อมูลการรับประกันและช่องทางติดตาม</p></div></article>
+            <article><span>03</span><div><h3>เลือกของให้เหมาะกับคุณ</h3><p>ตั้งใจทำให้การเลือกอุปกรณ์ไอทีเป็นเรื่องง่าย</p></div></article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section section-spacing">
+    <div class="container contact-card">
+        <div><span class="eyebrow">CONTACT US</span><h2>พร้อมให้คำแนะนำเรื่องอุปกรณ์ไอที</h2><p>สอบถามสินค้าและรายละเอียดเพิ่มเติมได้ผ่านช่องทางของ TechZone</p></div>
+        <div class="contact-details"><p><strong>Phone:</strong> 0946308259</p><p><strong>Email:</strong> Rakarjankhawncai@Gmail.com</p><p><strong>Opening Hours:</strong> Monday-Friday: 09:00 AM-12:00 AM</p></div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div><a class="footer-brand" href="index.html"><img src="techzone-logo-transparent.png" alt="TechZone"></a><p>Computer &amp; Gaming Store</p></div>
+        <p>&copy; 2026 TechZone. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

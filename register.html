@@ -1,1 +1,38 @@
-<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Register - TechZone</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="container header-inner"><a href="index.html" class="brand-logo"><img src="techzone-logo-transparent.png" alt="TechZone"></a><div class="header-actions"><div class="auth-area"></div></div></div></header><main class="login-page"><div class="container"><div class="login-card"><span class="eyebrow">TECHZONE ACCOUNT</span><h1>สมัครสมาชิก</h1><form id="registerForm"><label>ชื่อ-นามสกุล</label><input type="text" id="name" required><label>Email</label><input type="email" id="regEmail" required><label>Password</label><input type="password" id="regPassword" required><label>ยืนยัน Password</label><input type="password" id="regConfirm" required><div id="registerError" class="error-message" style="display:none"></div><button id="registerButton" class="button button-accent">สมัครสมาชิก</button></form><p class="switch-auth">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p></div></div></main><div id="toast" class="toast"></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+    <a href="index.html" class="brand-logo" aria-label="TechZone IT Solutions">
+        <img src="techzone-logo-transparent.png" alt="TechZone IT Solutions">
+    </a>
+    <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="index.html#about">เกี่ยวกับเรา</a></li><li><a href="index.html#contact">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+        <div class="auth-area"></div>
+        <a class="cart-link" href="products.html#cart">🛒 <span id="cartBadge" class="cart-badge">0</span></a>
+    </div>
+</div></header>
+<main class="login-page"><div class="container"><div class="login-card">
+    <span class="eyebrow">TECHZONE ACCOUNT</span><h1>สมัครสมาชิก</h1>
+    <p class="muted">สมัครแล้วรับเงินทดลองใช้ 1,000 THB สำหรับทดสอบการสั่งซื้อ (ยังเติมเงินจริงไม่ได้ — ระบบชำระเงินจริงยังไม่เปิด)</p>
+    <form id="registerForm" novalidate>
+        <label for="name">ชื่อ-นามสกุล</label><input type="text" name="name" id="name" autocomplete="name" required>
+        <label for="regEmail">Email</label><input type="email" name="email" id="regEmail" autocomplete="email" required>
+        <label for="regPassword">Password</label><input type="password" name="password" id="regPassword" autocomplete="new-password" minlength="6" required>
+        <label for="regConfirm">ยืนยัน Password</label><input type="password" name="confirmPassword" id="regConfirm" autocomplete="new-password" minlength="6" required>
+        <div id="registerError" class="error-message" style="display:none;"></div>
+        <button id="registerButton" class="button button-accent full-width" type="submit">สมัครสมาชิก</button>
+    </form>
+    <p class="switch-auth">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+</div></div></main>
+<footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="index.html"><img src="techzone-logo-transparent.png" alt="TechZone"></a><p>Computer &amp; Gaming Store</p></div><p>&copy; 2026 TechZone. All Rights Reserved.</p></div></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
