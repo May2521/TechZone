@@ -56,7 +56,23 @@ a{color:inherit}button,input,select{font:inherit}
 .cart-badge{position:absolute;right:-10px;top:-10px;min-width:21px;height:21px;padding:0 5px;display:grid;place-items:center;border-radius:99px;background:var(--blue);color:#fff;font:700 .68rem Inter}
 
 /* Hero */
-.hero-section{position:relative;min-height:375px;display:flex;align-items:center;overflow:hidden;color:#fff;background:linear-gradient(90deg,rgba(3,13,26,.98) 0%,rgba(3,13,26,.88) 35%,rgba(3,13,26,.8));}
+.hero-section{
+    position:relative;
+    min-height:375px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    color:#fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,13,26,.90) 0%,
+            rgba(3,13,26,.72) 45%,
+            rgba(3,13,26,.55) 100%
+        ),
+        url("laptop.webp") center/cover no-repeat;
+}
 .hero-section::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 45%,rgba(0,151,255,.14),transparent 35%)}
 .hero-glow{position:absolute;width:350px;height:350px;right:8%;top:10%;border-radius:50%;background:rgba(20,139,255,.13);filter:blur(70px)}
 .hero-content{position:relative;z-index:2;padding:45px 0}
