@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+    <a href="index.html" class="brand-logo" aria-label="TechZone IT Solutions">
+    <img src="assets/logo/techzone-logo-transparent.png" alt="TechZone IT Solutions">
+</a>
+    <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">หน้าแรก</a></li><li><a href="products.html">สินค้า</a></li><li><a href="index.html#about">เกี่ยวกับเรา</a></li><li><a href="index.html#contact">ติดต่อเรา</a></li></ul></nav>
+    <div class="header-actions">
+        <div class="auth-area"></div>
+        <a class="cart-link" href="products.html#cart">🛒 <span id="cartBadge" class="cart-badge">0</span></a>
+    </div>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">MY ACCOUNT</span><h1>บัญชีของฉัน</h1><p>จัดการโปรไฟล์ ยอดเงินในเว็บ และประวัติการสั่งซื้อ</p></div></section>
+
+<section class="section-spacing" id="accountContent">
+    <div class="container account-layout">
+        <div class="account-card">
+            <span class="eyebrow">PROFILE</span>
+            <h2 id="accountName">-</h2>
+            <p id="accountEmail" class="muted">-</p>
+        </div>
+        <div class="account-card wallet-card">
+            <span class="eyebrow">ยอดเงินในเว็บ</span>
+            <h2 id="walletBalance">0 THB</h2>
+            <p class="muted">เงินทดลองใช้สำหรับทดสอบระบบ — ยังเติมเงินจริงไม่ได้ (ระบบชำระเงินจริงยังไม่เปิดใช้งาน)</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">ORDER HISTORY</span><h2>ประวัติการสั่งซื้อ</h2></div></div>
+        <div id="orderHistory" class="order-list"></div>
+    </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="index.html"><img src="assets/logo/techzone-logo-transparent.png" alt="TechZone"></a><p>Computer & Gaming Store</p></div><p>&copy; 2026 TechZone. All Rights Reserved.</p></div></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
